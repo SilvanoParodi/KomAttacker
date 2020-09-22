@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <fragment
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/mapHunting"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+    />
+    <LinearLayout
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/tvDistanceToTarget"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="40dp"
+            android:text="Distance to target:"
+            android:textColor="#F00"
+            />
+        <Button
+            android:id="@+id/btTestStart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Test1:log on"
+            />
+        <Button
+            android:id="@+id/btTestStop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Test2: log stop"
+            />
+        <Button
+            android:id="@+id/btTestSimul1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Test3: Simula Avvicinamento"
+            />
+        <Button
+            android:id="@+id/btTestSimul2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Test4: Simula Gara"
+            />
+    </LinearLayout>
+
+    <!--  Layout Race -->
+    <LinearLayout
+        android:id="@+id/llRace"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible" >
+
+        <TextView
+            android:id="@+id/tvCheckPointTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CheckPoint Time:"
+            android:textColor="#F00"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_gravity="center_horizontal"
+            />
+        <TextView
+            android:id="@+id/tvDistanceRace"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Distance Race:"
+            android:textColor="#000"
+            android:layout_marginLeft="20dp"
+            />
+        <TextView
+            android:id="@+id/tvDistanceToNext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Distance To Next CP:"
+            android:textColor="#000"
+            android:layout_marginLeft="20dp"
+            />
+        <TextView
+            android:id="@+id/tvDeltaSeconds"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Delta seconds:"
+            android:textColor="#000"
+            android:layout_marginLeft="20dp"
+            />
+        <TextView
+            android:id="@+id/tvDeltaMeters"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Delta meters:"
+            android:textColor="#000"
+            android:layout_marginLeft="20dp"
+            />
+
+        <view
+            class = "com.inandio.komattacker.ProgressPipeControl"
+            android:id="@+id/progressControl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="100dp"
+            />
+
+
+    </LinearLayout>
+
+    <!-- Blocco Layout solo SOLO in simulazione -->
+    <LinearLayout
+        android:id="@+id/llSimulationRace"
+        android:orientation="vertical"
+        android:gravity="bottom"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="20dp"
+        android:visibility="invisible" >
+        <Button
+            android:id="@+id/btSimulAccelera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SIM: Accelera"
+            />
+        <Button
+            android:id="@+id/btSimulDecelera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SIM: Decelera"
+            />
+        <TextView
+            android:id="@+id/tvSimulatedSpeed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-"
+            android:textColor="#000"
+            />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnStopService"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Stop service"
+        />
+
+</FrameLayout>

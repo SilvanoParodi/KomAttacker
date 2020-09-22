@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">KomAttacker</string>
+    <string name="kom_attacker">Kom_Attacker</string>
+    <string name="service_started">Servizio attivo</string>
+    <string name="listEmptyText">Nessun risultato</string>
+    <string name="option">TO DO</string>
+    <string name="tab_startHunting_main">Caccia</string>
+    <string name="tab_startHunting_map">Mappa</string>
+    <string name="tab_startHunting_details">Dettagli</string>
+    <string name="noAttempsDone">Nessuna prova effettuata</string>
+    <string name="VS">VS.</string>
+    <string name="atlethe">Ateleta</string>
+    <string name="time">Ora</string>
+    <string name="distanced">Distanza</string>
+
+    <!--start filter - fab button-->
+    <string name="friends">Amici</string>
+    <string name="maps">Mappa</string>
+    <string name="starred">Preferiti</string>
+
+    <!--account-->
+    <string name="logout">Logout</string>
+
+    <!--map fragment-->
+    <string name="goBack">Torna alla mappa</string>
+
+    <!--menu-->
+    <string name="action_account">Account</string>
+    <string name="action_settings">Impostazioni</string>
+    <string name="action_about">Info</string>
+    <string name="search">Cerca</string>
+
+    <!--settings-->
+    <string name="pref_user_setting">Impostazioni utente</string>
+    <string name="pref_gender_comparison_summary">Classifica per genere</string>
+    <string name="pref_gender_comparison_report">Confrontati con atleti dello stesso sesso</string>
+    <string name="pref_developer_option_summary">Opzioni sviluppatore</string>
+    <string name="pref_developer_option_report">Mostra pulsanti di simulazione movimento</string>
+    <string name="pref_vocal_assistant_summary">Assistente vocale</string>
+    <string name="pref_vocal_assistant_report">Abilita aggiornamento vocale dei tempi</string>
+    <string name="searchHint_segment">Inserire nome segmento</string>
+    <string name="toastMessage_KomBySegment">Il segmento selezionato non ha una classifica associata...non hai nessuno da battere!</string>
+    <string name="toastMessage_StravaConnectivityIssue">Impossibile collegarsi a Strava, controlla la connessione</string>
+    <string name="loginDialog_Title">Info</string>
+    <string name="loginDialog_InternetIssue">Rete non disponibile, controlla e riprova</string>
+    <string name="dialog_OK">OK</string>
+    <string name="toastMessage_Logoutissue">Errore durante il logout</string>
+    <string name="catergory_unknow">Non categorizzato</string>
+    <string name="climbCategory">Categoria della salita: %s</string>
+    <string name="hintSearch_EnterName">Inserire il nomeo</string>
+    <string name="NoAttempsMessage">Sembra che tu non abbia ancora provato ad attaccare nessuno KOM, vai sul tasto \u0022+\u0022 ed inizia a rubare i KOM</string>
+    <string name="action_termCondition"><![CDATA[Terms & Condition]]></string>
+    <string name="inandiomailaddress">info@inandio.com</string>
+    <string name="friendKom"> KOM di </string>
+    <string name="startHunting">Inizia la caccia</string>
+    <string name="startingActivityTitle">Inizia la tua caccia!</string>
+</resources>

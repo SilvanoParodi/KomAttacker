@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/challengerowBackround"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:layout_marginBottom="0dp"
+    android:background="@color/my_secondary_light">
+<LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:weightSum="4">
+    <!-- Player 1 section -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="10dp"
+        android:layout_weight="2">
+        <com.inandio.komattacker.CircularImageView
+            android:id="@+id/image_player1_challenge"
+            border="false"
+            border_width="0dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="11dp"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="11dp"
+            android:gravity="center"
+            android:layout_gravity="center_horizontal"/>
+        <TextView
+            android:gravity="center"
+            android:id="@+id/description_player1_challenge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="@dimen/NormalText"/>
+    </LinearLayout>
+    <TextView
+        android:layout_weight="0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_gravity="center"
+        android:text="@string/VS"
+        android:textColor="@color/black"
+        android:textSize="@dimen/NormalText"/>
+
+    <!-- Player 2 section -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="2">
+
+        <com.inandio.komattacker.CircularImageView
+            android:id="@+id/image_player2_Challenge"
+            border="false"
+            border_width="0dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="11dp"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="11dp"
+            android:gravity="center"
+            android:layout_gravity="center_horizontal"/>
+        <TextView
+            android:id="@+id/description_player2_Challenge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="@dimen/NormalText"/>
+    </LinearLayout>
+</LinearLayout>
+</LinearLayout>

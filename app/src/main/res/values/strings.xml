@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">KomAttacker</string>
+    <string name="kom_attacker">Kom_Attacker</string>
+    <string name="service_started">Service_started</string>
+    <string name="listEmptyText">No results</string>
+    <string name="option">TO DO</string>
+    <string name="tab_startHunting_main">Hunting</string>
+    <string name="tab_startHunting_map">Map</string>
+    <string name="tab_startHunting_details">Details</string>
+    <string name="noAttempsDone">No attempts done</string>
+    <string name="VS">VS.</string>
+    <string name="atlethe">Athlete</string>
+    <string name="time">Time</string>
+    <string name="distanced">Distance</string>
+
+    <!--start filter - fab button-->
+    <string name="friends">Friends</string>
+    <string name="maps">Maps</string>
+    <string name="starred">Starred</string>
+
+    <!--account-->
+    <string name="logout">Logout</string>
+
+    <!--map fragment-->
+    <string name="goBack">Go to map</string>
+
+    <!--menu-->
+    <string name="action_account">Account</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_about">About</string>
+    <string name="search">Search</string>
+
+    <!--settings-->
+    <string name="pref_user_setting">User settings</string>
+    <string name="pref_gender_comparison_summary">Leadearboard gender</string>
+    <string name="pref_gender_comparison_report">Compare with athlete of same gender</string>
+    <string name="pref_developer_option_summary">Developer option</string>
+    <string name="pref_developer_option_report">Show developer movement buttons</string>
+    <string name="pref_vocal_assistant_summary">Vocal assistant</string>
+    <string name="pref_vocal_assistant_report">Enable vocal assistant</string>
+
+    <string name="searchHint_segment">Enter segment name...</string>
+    <string name="toastMessage_KomBySegment">Selected segment has a empty leaderboard...you have no one to beat!</string>
+    <string name="toastMessage_StravaConnectivityIssue">Unable to connect with Strava, check connection</string>
+    <string name="loginDialog_Title">Info</string>
+    <string name="loginDialog_InternetIssue">Internet not available, check your internet connectivity and try again</string>
+    <string name="dialog_OK">OK</string>
+    <string name="toastMessage_Logoutissue">Logged out operation failed</string>
+    <string name="catergory_unknow">Not categorized</string>
+    <string name="climbCategory">Climb Category: %s</string>
+    <string name="hintSearch_EnterName">Enter name...</string>
+    <string name="NoAttempsMessage">Sembra che tu non abbia ancora provato ad attaccare nessuno KOM, vai sul più ed inizia a rubare i KOM</string>
+    <string name="action_termCondition"><![CDATA[Terms & Condition]]></string>
+    <string name="inandiomailaddress">info@inandio.com</string>
+    <string name="friendKom">KOM of </string>
+    <string name="startHunting">Start hunting</string>
+    <string name="startingActivityTitle">Start here your hunting</string>
+</resources>

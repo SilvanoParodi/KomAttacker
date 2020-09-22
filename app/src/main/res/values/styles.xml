@@ -1,0 +1,56 @@
+<resources>
+    <style name="Base.Theme.KomAttacker" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/my_primary</item>
+
+        <!--   darker variant for the status bar and contextual app bars -->
+        <item name="colorPrimaryDark">@color/my_primary_dark</item>
+
+        <!--   theme UI controls like checkboxes and text fields e.g. FloatActionButton -->
+        <item name="colorAccent">@color/my_accent</item>
+
+        <!-- Title Text Color -->
+        <item name="android:textColorPrimary">@color/my_primary_text</item>
+
+        <!-- color of the menu overflow icon (three vertical dots) -->
+        <item name="android:textColorSecondary">@color/my_secondary_text</item>
+
+        <item name="android:windowBackground">@color/window_background</item>
+    </style>
+    <style name="AppBaseTheme" parent="Base.Theme.KomAttacker">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+        <item name="android:windowBackground">@android:color/white</item>
+        <item name="android:editTextColor">@android:color/white</item> <!-- edit search... -->
+        <item name="android:textColor">@android:color/background_dark</item> <!-- Testo bottoni, menu... -->
+        <item name="colorControlNormal">@android:color/white</item>
+        <item name="colorControlHighlight">@color/my_ControlHighlight</item>
+    </style>
+
+    <style name="menu_labels_style">
+        <item name="android:background">@drawable/fab_label_background</item>
+        <item name="android:textColor">@color/my_secondary_text</item>
+    </style>
+
+    <style name="NoConnectionAlertDialogStyle" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <!-- Used for the buttons -->
+        <item name="colorAccent">@color/my_accent</item>
+        <!-- Used for the title and text -->
+        <item name="android:textColorPrimary">@color/my_secondary_text</item>
+        <!-- Used for the background -->
+        <item name="android:background">@color/window_background</item>
+    </style>
+
+    <style name="SpotsDialogDefault" parent="android:Theme.DeviceDefault.Light.Dialog">
+        <item name="DialogTitleAppearance">@android:style/TextAppearance.Medium</item>
+        <item name="DialogTitleText">Loading…</item>
+        <item name="DialogSpotCount">5</item>
+    </style>
+</resources>

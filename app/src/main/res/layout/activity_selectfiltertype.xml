@@ -1,0 +1,135 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="in.city.bytes.view.MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:weightSum="1">
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="?attr/colorPrimary" />
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/selectionPanel"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:weightSum="1">
+                <!--<TextView-->
+                    <!--android:id="@+id/EmptyAttempts"-->
+                    <!--android:layout_width="fill_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginBottom="20dp"-->
+                    <!--android:layout_marginTop="20dp"-->
+                    <!--android:gravity="center"-->
+                    <!--android:textSize="30sp"-->
+                    <!--android:text="@string/noAttempsDone" />-->
+                <ListView
+                    android:id="@+id/listViewAttempts"
+                    android:layout_width="fill_parent"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:divider="@drawable/list_divider_attemp"
+                    android:dividerHeight="1.5dp"
+                    />
+
+                <LinearLayout
+                    android:weightSum="1"
+                    android:layout_margin="20dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:id="@+id/l_Layout_noAttempt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+                    <TextView
+                        android:layout_marginBottom="30dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:gravity="left"
+                        android:textSize="@dimen/NormalText"
+                        android:text="@string/NoAttempsMessage"/>
+
+                    <ImageView
+                        android:layout_weight="1"
+                        android:layout_gravity="center"
+                        android:layout_width="70dp"
+                        android:layout_height="700dp"
+                        android:src="@drawable/ic_directions_bike_black_48dp"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/frame_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent">
+
+        <!--  floating action menu with buttons -->
+        <com.getbase.floatingactionbutton.FloatingActionsMenu
+            android:id="@+id/fab_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|bottom"
+            fab:fab_addButtonColorNormal="@color/my_accent"
+            fab:fab_addButtonColorPressed="@color/my_primary_dark"
+            fab:fab_addButtonPlusIconColor="@color/my_primary_text"
+            fab:fab_addButtonStrokeVisible="false"
+            fab:fab_labelStyle="@style/menu_labels_style"
+            fab:fab_labelsPosition="left">
+
+            <com.getbase.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fab_friends"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                fab:fab_colorNormal="@color/my_primary"
+                fab:fab_colorPressed="@color/my_primary_dark"
+                fab:fab_plusIconColor="@color/white"
+                fab:fab_icon="@drawable/ic_people_white_48dp"
+                fab:fab_size="mini"
+                fab:fab_title="@string/friends"/>
+
+            <com.getbase.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fab_maps"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                fab:fab_colorNormal="@color/my_primary"
+                fab:fab_colorPressed="@color/my_primary_dark"
+                fab:fab_plusIconColor="@color/white"
+                fab:fab_icon="@drawable/ic_map_white_48dp"
+                fab:fab_size="mini"
+                fab:fab_title="@string/maps"/>
+
+            <com.getbase.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fab_starred"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                fab:fab_colorNormal="@color/my_primary"
+                fab:fab_colorPressed="@color/my_primary_dark"
+                fab:fab_plusIconColor="@color/white"
+                fab:fab_icon="@drawable/ic_grade_white_48dp"
+                fab:fab_size="mini"
+                fab:fab_title="@string/starred"/>
+        </com.getbase.floatingactionbutton.FloatingActionsMenu>
+    </FrameLayout>
+</FrameLayout>
+
+
+
+

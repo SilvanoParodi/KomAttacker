@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+    <PreferenceCategory android:title="@string/pref_user_setting" >
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="prefGenderComparison"
+            android:summary="@string/pref_gender_comparison_report"
+            android:title="@string/pref_gender_comparison_summary"
+            android:backgroundTint="@color/abc_background_cache_hint_selector_material_dark">
+        </CheckBoxPreference>
+
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="prefVocalAssistant"
+            android:summary="@string/pref_vocal_assistant_report"
+            android:title="@string/pref_vocal_assistant_summary"
+            android:backgroundTint="@color/abc_background_cache_hint_selector_material_dark">
+        </CheckBoxPreference>
+
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="prefDeveloperMode"
+            android:summary="@string/pref_developer_option_report"
+            android:title="@string/pref_developer_option_summary"
+            android:backgroundTint="@color/abc_background_cache_hint_selector_material_dark">
+        </CheckBoxPreference>
+
+    </PreferenceCategory>
+</PreferenceScreen>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="72dp"
+        android:orientation="horizontal"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin">
+
+
+    <com.inandio.komattacker.CircularImageView
+        android:id="@+id/icon_climb_category"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="11dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:gravity="center_vertical"
+        border="false"
+        border_width="0dp"
+        android:contentDescription="TODO" />
+
+        <TextView
+            android:id="@+id/kom_name"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center_vertical"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:text="@string/atlethe"
+            android:textSize="@dimen/NormalText"
+            android:textColor="@color/black"/>
+    </LinearLayout>
