@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.inandio.komattacker" >
+
+    <uses-permission android:name="android.permission.ACCESS_GPS" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <!--
+The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+     Google Maps Android API v2, but are recommended.
+-->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher2"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+
+      <!--  <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" /> -->
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name="com.inandio.komattacker.LoginActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.inandio.komattacker.SelectFilterTypeActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:parentActivityName="com.inandio.komattacker.LoginActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.inandio.komattacker.LoginActivity" />
+        </activity>
+
+        <activity
+            android:name="com.inandio.komattacker.AccountActivity"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity
+            android:name="com.inandio.komattacker.AboutActivity"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity
+            android:name="com.inandio.komattacker.UserSettingActivity"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity
+            android:name="com.inandio.komattacker.StravaFriendsActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:parentActivityName="com.inandio.komattacker.SelectFilterTypeActivity"
+            android:windowSoftInputMode="stateHidden">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.inandio.komattacker.SelectFilterTypeActivity" />
+        </activity>
+        <activity
+            android:name="com.inandio.komattacker.FriendKomsActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:parentActivityName="com.inandio.komattacker.StravaFriendsActivity"
+            android:windowSoftInputMode="stateHidden">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.inandio.komattacker.StravaFriendsActivity" />
+        </activity>
+        <activity
+            android:name="com.inandio.komattacker.CurrentAthleteSegmentsActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:parentActivityName="com.inandio.komattacker.SelectFilterTypeActivity"
+            android:windowSoftInputMode="stateHidden">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.inandio.komattacker.SelectFilterTypeActivity" />
+        </activity>
+        <activity
+            android:name="com.inandio.komattacker.SegmentMapExplorerActivity"
+            android:label="Segment Map"
+            android:screenOrientation="portrait"
+            android:parentActivityName="com.inandio.komattacker.SelectFilterTypeActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.inandio.komattacker.SelectFilterTypeActivity" />
+        </activity>
+
+        <activity
+            android:name="com.inandio.komattacker.StartHuntingActivity"
+            android:label="@string/startHunting"
+            android:screenOrientation="portrait"
+            >
+        </activity>
+
+        <activity
+            android:name="com.inandio.komattacker.HuntingActivity"
+            android:label="Hunting"
+            android:screenOrientation="portrait"
+            android:parentActivityName="com.inandio.komattacker.StartHuntingActivity">
+        </activity>
+
+
+        <service android:name=".GPSService"></service>
+
+
+    </application>
+
+</manifest>
